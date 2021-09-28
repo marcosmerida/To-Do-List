@@ -39,5 +39,5 @@ document.getElementById('button').addEventListener('click', (description) => {
   taskobj.description = document.getElementById('task').value;
   taskobj.index = count;
   allTasks.push(taskobj);
-addElements(taskobj);
+  addElements(taskobj);
 });
