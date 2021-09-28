@@ -1,16 +1,12 @@
 # To Do List
 
-This project was created with the objetive of complete the first milestone of the "To Do List" project, it shows default Tasks in example of how is gonna be when you add more tasks.
+This project was created with the objetive of complet the first milestone of the "To Do List" project, it shows default Tasks in example of how is gonna be when you add more tasks.
 
 ![screenshot](screenshots/screenshot.png)
 
 ## Built With
 
 - HTML, JavaScript & CSS
-
-## Live Demo
-
-[Live Demo Link](https://marcosmerida.github.io/Awesome-Books/)
 
 ## Instalation
 
@@ -22,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- IDE to edit and run the code (We've used Visual Studio Code 🔥).
+- IDE to edit and run the code (I've used Visual Studio Code 🔥).
 
 ### Usage
 
