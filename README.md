@@ -10,7 +10,7 @@ This project was created with the objetive of complet the first milestone of the
 
 ## Live Demo
 
-[Live Demo Link](https://marcosmerida.github.io/Awesome-Books/)
+[Live Demo Link](https://marcosmerida.github.io/To-Do-List/)
 
 ## Instalation
 
