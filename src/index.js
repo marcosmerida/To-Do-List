@@ -38,8 +38,6 @@ document.getElementById('button').addEventListener('click', (description) => {
   const taskobj = { description, completed: false, index: count };
   taskobj.description = document.getElementById('task').value;
   taskobj.index = count;
-  console.log(taskobj);
   allTasks.push(taskobj);
-  console.log(allTasks);
 addElements(taskobj);
 });
