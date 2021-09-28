@@ -34,7 +34,7 @@ defaultTasks();
 
 /* EventListener to create new Tasks */
 document.getElementById('button').addEventListener('click', (description) => {
-  count++;
+  count += 1;
   const taskobj = { description, completed: false, index: count };
   taskobj.description = document.getElementById('task').value;
   taskobj.index = count;
