@@ -1,79 +1,79 @@
 @font-face {
-    font-family: "delight";
-    src: url("./Delight.ttf") format("ttf"), url("./Delight.ttf") format("ttf");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "delight";
+  src: url("./Delight.ttf") format("ttf"), url("./Delight.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {
-    background-color: #f6e8ea;
+  background-color: #f6e8ea;
 }
 
 #container {
-    width: 100%;
-    max-width: 25%;
-    margin: auto;
-    background-color: white;
-    box-shadow: 9px 7px 13px -2px rgba(136, 130, 130, 1);
-    -webkit-box-shadow: 9px 7px 13px -2px rgba(136, 130, 130, 1);
-    -moz-box-shadow: 9px 7px 13px -2px rgba(136, 130, 130, 1);
+  width: 100%;
+  max-width: 25%;
+  margin: auto;
+  background-color: white;
+  box-shadow: 9px 7px 13px -2px rgba(136, 130, 130, 1);
+  -webkit-box-shadow: 9px 7px 13px -2px rgba(136, 130, 130, 1);
+  -moz-box-shadow: 9px 7px 13px -2px rgba(136, 130, 130, 1);
 }
 
 ul {
-    list-style: none;
-    padding: 0%;
-    margin: auto;
+  list-style: none;
+  padding: 0%;
+  margin: auto;
 }
 
 ul li {
-    height: 3vw;
-    width: 100%;
-    text-align: left;
-    max-width: 100%;
-    align-items: center;
-    display: inline-flex;
-    border-bottom: 1px solid grey;
+  height: 3vw;
+  width: 100%;
+  text-align: left;
+  max-width: 100%;
+  align-items: center;
+  display: inline-flex;
+  border-bottom: 1px solid grey;
 }
 
 ul li button {
-    float: right;
-    margin: auto;
-    margin-right: 2%;
-    background: none;
-    border: none;
-    padding: 0%;
+  float: right;
+  margin: auto;
+  margin-right: 2%;
+  background: none;
+  border: none;
+  padding: 0%;
 }
 
 a p {
-    font-family: "delight", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 0%;
-    height: 3vw;
+  font-family: "delight", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 0%;
+  height: 3vw;
 }
 
 ul li p {
-    font-family: "delight", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 1vw;
-    padding: 0%;
+  font-family: "delight", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1vw;
+  padding: 0%;
 }
 
 ul li input {
-    margin-left: 1vw;
-    text-align: left;
+  margin-left: 1vw;
+  text-align: left;
 }
 
 #clear {
-    text-align: center;
+  text-align: center;
 }
 
 #task {
-    width: 100%;
-    max-width: 20vw;
-    border: none;
-    outline: none;
+  width: 100%;
+  max-width: 20vw;
+  border: none;
+  outline: none;
 }
 
 #task:focus {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
