@@ -3,7 +3,7 @@ import _, { functionsIn } from 'lodash';
 import './style.css';
 
 const allTasks = [];
-let count = 0;
+const count = 0;
 const ul = document.getElementById('list');
 
 /* This function manipulates the DOM creating a new li element */
