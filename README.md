@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- IDE to edit and run the code (We've used Visual Studio Code 🔥).
+- IDE to edit and run the code (I've used Visual Studio Code 🔥).
 
 ### Usage
 
