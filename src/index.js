@@ -1,7 +1,11 @@
 /* eslint-disable no-unused-vars */
+
+/* Import section */
 import _, { functionsIn } from 'lodash';
 import './style.css';
+import * as MyModule from './status';
 
+/* Variable section */
 const allTasks = [];
 const count = 0;
 const ul = document.getElementById('list');
