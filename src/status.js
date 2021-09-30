@@ -1,5 +1,5 @@
 export function taskcompleted(elem, task, id) {
-  document.getElementById(elem).addEventListener("change", () => {
+  document.getElementById(elem).addEventListener('change', () => {
     let checkbox = document.getElementById(elem);
     if (checkbox.checked) {
       task.completed = true;
