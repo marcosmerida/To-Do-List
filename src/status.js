@@ -1,12 +1,11 @@
-export function taskcompleted(elem, task) {
-
-    document.getElementById(elem).addEventListener('change', (evento) => {
-    if (document.getElementById(elem).checked) {
-        task.completed = true;
-        console.log(task);
+export function taskcompleted(elem, task, id) {
+  document.getElementById(elem).addEventListener("change", () => {
+    let checkbox = document.getElementById(elem);
+    if (checkbox.checked) {
+      task.completed = true;
     } else {
-        task.completed = false;
-        console.log(task);
+      task.completed = false;
     }
-    });
+    localStorage.setItem(id, JSON.stringify(task));
+  });
 }
