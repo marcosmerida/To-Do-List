@@ -1,7 +1,6 @@
 # To Do List
 
-This project was created with the objetive of complet the first milestone of the "To Do List" project, it shows default Tasks in example of how is gonna be when you add more tasks.
-
+This project was created with the objetive of complete the second milestone of the "To Do List" project, it saves in the localstorage the information when you check/uncheck the checkbox of the default Tasks.
 ![screenshot](screenshots/screenshot.png)
 
 ## Built With
