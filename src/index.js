@@ -6,6 +6,7 @@ import "./style.css";
 import * as myModule from "./status.js";
 
 /* Variable section */
+const allTasks = [];
 const ul = document.getElementById("list");
 /* This function manipulates the DOM creating a new li element */
 function addElements(e) {
