@@ -50,8 +50,8 @@ function defaultTasks() {
     document.getElementById('default2').checked = false;
   }
 
-taskcompleted('default1', defaultTask1, 'default1');
-taskcompleted('default2', defaultTask2, 'default2');
+  taskcompleted('default1', defaultTask1, 'default1');
+  taskcompleted('default2', defaultTask2, 'default2');
 }
 
 defaultTasks();
