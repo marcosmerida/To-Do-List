@@ -2,8 +2,8 @@
 
 /* Import section */
 import _, { functionsIn } from 'lodash';
-import "./style.css";
-import * as myModule from './status';
+import './style.css';
+import taskcompleted from './status';
 
 /* Variable section */
 const allTasks = [];
@@ -50,8 +50,8 @@ function defaultTasks() {
     document.getElementById('default2').checked = false;
   }
 
-  myModule.taskcompleted('default1', defaultTask1, 'default1');
-  myModule.taskcompleted('default2', defaultTask2, 'default2');
+taskcompleted('default1', defaultTask1, 'default1');
+taskcompleted('default2', defaultTask2, 'default2');
 }
 
 defaultTasks();
