@@ -8,7 +8,6 @@ import taskcompleted from './status';
 /* Variable section */
 const ul = document.getElementById('list');
 let allTasks = [];
-let counter = 0;
 
 /* This function pushes the new task into the allTasks array and saves it in localStorage */
 function createTask(e) {
@@ -17,7 +16,7 @@ function createTask(e) {
   if (allTasks === null) {
     allTasks = [];
   }
-  let newTask = {
+  const newTask = {
     description: '',
     completed: false,
     index: allTasks.length + 1,
