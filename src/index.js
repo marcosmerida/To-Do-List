@@ -17,7 +17,11 @@ function createTask(e) {
   if (allTasks === null) {
     allTasks = [];
   }
-  let newTask = { description: '', completed: false, index: allTasks.length+1 };
+  let newTask = {
+    description: '',
+    completed: false,
+    index: allTasks.length + 1,
+  };
   newTask.description = e;
   /*   This procedure here verify if input text value contains nothing. */
   if (newTask.description === '') {
@@ -47,6 +51,7 @@ function printScreen() {
       checkbox.name = 'name';
       checkbox.value = number.completed;
       checkbox.checked = number.completed;
+      /*       Event listener to update completed status */
       checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
           number.completed = true;
@@ -58,30 +63,31 @@ function printScreen() {
           updateTasks(taskArray);
         }
       });
+      /*       TEXT AND THRASHBUTTON ELEMENTS CREATED AND ADDED TO LI */
       const text = document.createElement('input');
       text.type = 'text';
       text.value = number.description;
-      text.id = ('task');
+      text.id = 'task';
       const removeButton = document.createElement('button');
       removeButton.classList.add('removeTask');
       const trashIcon = document.createElement('i');
-      trashIcon.classList.add('fas' , 'fa-trash-alt');
+      trashIcon.classList.add('fas', 'fa-trash-alt');
       removeButton.appendChild(trashIcon);
-      removeButton.addEventListener('click', (event) =>{
+      /*       Eventlistener to remove items from array */
+      removeButton.addEventListener('click', (event) => {
         liTag.style.display = 'none';
         const index = event.target.parentElement.id;
         taskArray.splice(index, 1);
         updateTasks(taskArray);
-        for (let i = 0; i < taskArray.length; i++){
-          
-          }
+        printScreen();
+        for (let i = 0; i < taskArray.length; i++) {
+          taskArray[i].index = i+1;
+        }
         updateTasks(taskArray);
         printScreen();
       });
-      /* const taskOne = `<input type = 'checkbox' class = "removeTask" id = ${number.index}><input type="text" id = "task" value= "${number.description}"></input></input><button class='removeBook' id='buttonremove' value='${number.index}'><i class="fas fa-trash-alt"></i></button>`; */
       const liTag = document.createElement('li');
       liTag.setAttribute('id', number.index);
-      /*  liTag.innerHTML = taskOne.trim(); */
       ul.appendChild(liTag);
       liTag.append(checkbox, text, removeButton);
     });
