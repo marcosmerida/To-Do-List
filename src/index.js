@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 /* Import section */
-import _, { functionsIn, update } from 'lodash';
+import _, { functionsIn, iteratee, update } from 'lodash';
 import './style.css';
 import taskcompleted from './status';
 
@@ -67,7 +67,7 @@ function printScreen() {
       const text = document.createElement('input');
       text.type = 'text';
       text.value = number.description;
-      text.id = 'task';
+      text.id = 'task1';
       const removeButton = document.createElement('button');
       removeButton.classList.add('removeTask');
       const trashIcon = document.createElement('i');
@@ -80,8 +80,9 @@ function printScreen() {
         taskArray.splice(index, 1);
         updateTasks(taskArray);
         printScreen();
+        /*         FOR LOOP THAT MAKES EACH TASK CHANGE ITS INDEX WHENEVER ANOTHER TASK IS DELETED */
         for (let i = 0; i < taskArray.length; i++) {
-          taskArray[i].index = i+1;
+          taskArray[i].index = i + 1;
         }
         updateTasks(taskArray);
         printScreen();
