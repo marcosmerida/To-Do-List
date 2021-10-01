@@ -62,17 +62,23 @@ function printScreen() {
       });
       /*       TEXT AND THRASHBUTTON ELEMENTS CREATED AND ADDED TO LI */
       const text = document.createElement('input');
+      const liTag = document.createElement('li');
+      const trashIcon = document.createElement('i');
+      const removeButton = document.createElement('button');
       text.type = 'text';
       text.value = number.description;
       text.id = 'task1';
-      const removeButton = document.createElement('button');
+      text.addEventListener('change', (event) => {
+        const textid = event.target.parentElement.id;
+        taskArray[textid - 1].description = text.value;
+        updateTasks(taskArray);
+      });
       removeButton.classList.add('removeTask');
-      const trashIcon = document.createElement('i');
       trashIcon.classList.add('fas', 'fa-trash-alt');
       removeButton.appendChild(trashIcon);
       /*       Eventlistener to remove items from array */
       removeButton.addEventListener('click', (event) => {
-        liTag.style.display = 'none';
+        liTag.remove();
         const index = event.target.parentElement.id;
         taskArray.splice(index, 1);
         updateTasks(taskArray);
@@ -84,7 +90,6 @@ function printScreen() {
         updateTasks(taskArray);
         printScreen();
       });
-      const liTag = document.createElement('li');
       liTag.setAttribute('id', number.index);
       ul.appendChild(liTag);
       liTag.append(checkbox, text, removeButton);
@@ -102,6 +107,28 @@ document.getElementById('button').addEventListener('click', () => {
   let textTask = document.getElementById('task').value;
   createTask(textTask);
   printScreen();
+});
+
+document.getElementById('clearAll').addEventListener('click', (index) => {
+  let taskArray = JSON.parse(localStorage.getItem('data'));
+  if (taskArray === null) {
+    taskArray = [];
+  }
+  document.querySelectorAll('input[type=checkbox]').forEach((node) => {
+    console.log(node.length);
+    if (node.checked) {
+      node.parentElement.remove();
+      const newArray = taskArray.filter(function (el) {
+        return el.completed === false;
+      });
+      taskArray = newArray;
+      for (let i = 0; i < taskArray.length; i++) {
+        taskArray[i].index = i + 1;
+      }
+      updateTasks(taskArray);
+      printScreen();
+    }
+  });
 });
 
 /* Functions and eventListeners excecuted */
