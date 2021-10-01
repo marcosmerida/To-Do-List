@@ -9,6 +9,11 @@ import taskcompleted from './status';
 const ul = document.getElementById('list');
 let allTasks = [];
 
+/* This function updates the localstorage with new Tasks */
+function updateTasks(e) {
+  localStorage.setItem('data', JSON.stringify(e));
+}
+
 /* This function pushes the new task into the allTasks array and saves it in localStorage */
 function createTask(e) {
   /*   the data that is stored in allTasks variable is updated here with the localstorage */
@@ -31,11 +36,6 @@ function createTask(e) {
   }
 }
 
-/* This function updates the localstorage with new Tasks */
-function updateTasks(e) {
-  localStorage.setItem('data', JSON.stringify(e));
-}
-
 /* This function lodas the data from the localstorage */
 function printScreen() {
   ul.innerHTML = '';
@@ -54,11 +54,9 @@ function printScreen() {
       checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
           number.completed = true;
-          console.log(number.completed);
           updateTasks(taskArray);
         } else {
           number.completed = false;
-          console.log(number.completed);
           updateTasks(taskArray);
         }
       });
