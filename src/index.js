@@ -117,9 +117,9 @@ document.getElementById('clearAll').addEventListener('click', (index) => {
   document.querySelectorAll('input[type=checkbox]').forEach((node) => {
     if (node.checked) {
       node.parentElement.remove();
-      const newArray = taskArray.filter(el => { return el.completed === false;});
-        
-      
+      const newArray = taskArray.filter((el) => {
+        return el.completed === false;
+      });
       taskArray = newArray;
       for (let i = 0; i < taskArray.length; i += 1) {
         taskArray[i].index = i + 1;
