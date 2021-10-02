@@ -89,6 +89,7 @@ ul li input {
   transition: 0.2s;
   font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #clearAll:hover {
   background-color: cadetblue;
   color: white;

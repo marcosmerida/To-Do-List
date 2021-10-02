@@ -83,8 +83,8 @@ function printScreen() {
         taskArray.splice(index, 1);
         updateTasks(taskArray);
         printScreen();
-        /*         FOR LOOP THAT MAKES EACH TASK CHANGE ITS INDEX WHENEVER ANOTHER TASK IS DELETED */
-        for (let i = 0; i < taskArray.length; i++) {
+        /* FOR LOOP THAT MAKES EACH TASK CHANGE ITS INDEX WHENEVER ANOTHER TASK IS DELETED */
+        for (let i = 0; i < taskArray.length; i+= 1) {
           taskArray[i].index = i + 1;
         }
         updateTasks(taskArray);
@@ -104,7 +104,7 @@ function printScreen() {
 
 /* This function calls the data from the input text in HTML */
 document.getElementById('button').addEventListener('click', () => {
-  let textTask = document.getElementById('task').value;
+  const textTask = document.getElementById('task').value;
   createTask(textTask);
   printScreen();
 });
@@ -115,14 +115,13 @@ document.getElementById('clearAll').addEventListener('click', (index) => {
     taskArray = [];
   }
   document.querySelectorAll('input[type=checkbox]').forEach((node) => {
-    console.log(node.length);
     if (node.checked) {
       node.parentElement.remove();
-      const newArray = taskArray.filter(function (el) {
+      const newArray = taskArray.filter((el) => {
         return el.completed === false;
       });
       taskArray = newArray;
-      for (let i = 0; i < taskArray.length; i++) {
+      for (let i = 0; i < taskArray.length; i+= 1) {
         taskArray[i].index = i + 1;
       }
       updateTasks(taskArray);
