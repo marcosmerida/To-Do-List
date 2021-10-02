@@ -1,6 +1,6 @@
 function taskcompleted(elem, task, id) {
-  document.getElementById(elem).addEventListener('change', () => {
-    const checkbox = document.getElementById(elem);
+  document.getElementsByClassName(elem).addEventListener('change', () => {
+    const checkbox = document.getElementsByClassName(elem);
     if (checkbox.checked) {
       task.completed = true;
     } else {

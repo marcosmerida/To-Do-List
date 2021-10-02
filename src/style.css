@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "delight";
-  src: url("./Delight.ttf") format("ttf"), url("./Delight.ttf") format("ttf");
+  font-family: 'delight';
+  src: url('./Delight.ttf') format('ttf'), url('./Delight.ttf') format('ttf');
   font-weight: 600;
   font-style: normal;
 }
@@ -44,36 +44,55 @@ ul li button {
   padding: 0%;
 }
 
-a p {
-  font-family: "delight", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 0%;
-  height: 3vw;
-}
-
 ul li p {
-  font-family: "delight", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 1vw;
   padding: 0%;
+  font-size: 1.5vw;
 }
 
 ul li input {
+  font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 1vw;
   text-align: left;
+  font-size: 1.5vw;
 }
 
 #clear {
   text-align: center;
 }
 
-#task {
+#task,
+#task1 {
   width: 100%;
   max-width: 20vw;
   border: none;
   outline: none;
 }
 
-#task:focus {
+#task,
+#task1:focus {
   border: none;
   outline: none;
+}
+
+#clearAll {
+  background: none;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-size: 1.5vw;
+  transition: 0.2s;
+  font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#clearAll:hover {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1.6vw;
+  font-weight: bold;
 }

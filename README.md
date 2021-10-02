@@ -1,6 +1,6 @@
 # To Do List
 
-This project was created with the objetive of complete the second milestone of the "To Do List" project, it saves in the localstorage the information when you check/uncheck the checkbox of the default Tasks.
+This project was created with the objetive of complete the thirds milestone of the "To Do List" project, which includes all the functions like adding, removing, editing tasks from the list, remove all the completed tasks.
 ![screenshot](screenshots/screenshot.png)
 
 ## Built With

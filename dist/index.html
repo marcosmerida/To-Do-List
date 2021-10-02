@@ -11,21 +11,24 @@
   <script defer src="main.js"></script></head>
   <body>
     <div id="container">
-      <ul id="list">
+      <ul id="menu">
         <li id="title"><p>Today's to do</p></li>
         <li>
           <input
             type="text"
             name=""
             id="task"
+            onfocus="this.value=''"
             placeholder="Add to your list..."
             required
           />
           <button id="button"><i class="fas fa-plus"></i></button>
         </li>
       </ul>
-      <a href=""><p>Clear all completed</p></a>
+      <ul id="list">
+      
       </ul>
+      <button id="clearAll">Clear all completed</button>
     </div>
   </body>
 </html>
