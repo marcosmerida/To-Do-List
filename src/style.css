@@ -79,9 +79,17 @@ ul li input {
 #clearAll {
   background: none;
   outline: none;
+  width: 100%;
+  max-width: 100%;
   border: none;
   margin: auto;
   padding-top: 2vw;
   padding-bottom: 2vw;
+  font-size: 1.5vw;
+  transition: 0.3s;
   font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#clearAll:hover {
+  background-color: cadetblue;
+  color: white;
 }
