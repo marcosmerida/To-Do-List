@@ -86,10 +86,12 @@ ul li input {
   padding-top: 2vw;
   padding-bottom: 2vw;
   font-size: 1.5vw;
-  transition: 0.3s;
+  transition: 0.2s;
   font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #clearAll:hover {
   background-color: cadetblue;
   color: white;
+  font-size: 1.6vw;
+  font-weight: bold;
 }
