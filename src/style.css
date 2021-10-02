@@ -44,13 +44,6 @@ ul li button {
   padding: 0%;
 }
 
-a p {
-  font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 0%;
-  height: 3vw;
-}
-
 ul li p {
   font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 1vw;
@@ -81,4 +74,14 @@ ul li input {
 #task1:focus {
   border: none;
   outline: none;
+}
+
+#clearAll {
+  background: none;
+  outline: none;
+  border: none;
+  margin: auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-family: 'delight', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
