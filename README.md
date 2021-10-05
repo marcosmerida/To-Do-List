@@ -9,7 +9,7 @@ This project was created with the objetive of complete the thirds milestone of t
 
 ## Live Demo
 
-[Live Demo Link](https://marcosmerida.github.io/https://marcosmerida.github.io/To-Do-List/dist/)
+[Live Demo Link](https://marcosmerida.github.io/To-Do-List/dist)
 
 ## Instalation
 
