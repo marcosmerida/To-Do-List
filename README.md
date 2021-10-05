@@ -7,6 +7,10 @@ This project was created with the objetive of complete the thirds milestone of t
 
 - HTML, JavaScript & CSS
 
+## Live Demo
+
+[Live Demo Link](https://marcosmerida.github.io/https://marcosmerida.github.io/To-Do-List/dist)
+
 ## Instalation
 
 To get a local copy up and running follow these simple example steps.
